@@ -18,12 +18,6 @@ body {
   margin: 0;
 }
 
-@media screen and (min-width:375px){
-  body {
-      font-size: 14px;
-  }
-}
-
 @media screen and (min-width:768px){
   body {
       font-size: 15px;
@@ -54,7 +48,7 @@ header::before {
 
 @media screen and (max-width: 1100px) {
   header {
-    height: 80vh;
+    height: 100vh;
   }
 }
 
@@ -104,6 +98,12 @@ header ul {
   letter-spacing: .8rem;
 }
 
+@media screen and (max-width:890px){
+  .title {
+      font-size: 1.6em; 
+  }
+}
+
 .wrapper {
   display: grid;
   grid-template-columns: 50% 50%;
@@ -111,10 +111,6 @@ header ul {
 
 .wrapper img {
   width: 100%;
-}
-
-.griditem {
-  margin-bottom: -5px;
 }
 
 .textbox {
@@ -131,17 +127,17 @@ header ul {
 
 @media screen and (max-width: 1100px) {
   .textbox{
-    height: 40vh;
+    height: 70vh;
   }
   .content {
-      width: 70%;
+      width: 80%;
   }
 }
 
 .textbox p {
   margin: 0;
   padding-top: 2em;
-  font-size: 1rem;
+  font-size: 1.2rem;
   color: var(--greyblue);
 }
 
@@ -238,6 +234,17 @@ header ul {
   font-size: 1.1rem;
   margin-left: 30%;
   margin-right: 30%;
+}
+
+@media screen and (max-width: 890px) {
+  .backdroppic {
+    height: 40vh;
+  }
+
+  .backdroppic p {
+    margin-left: 10%;
+    margin-right: 10%;
+  }
 }
 
 .cherry {
@@ -443,7 +450,7 @@ footer .attribution a {
 .dropdown .contact {
   background: var(--yellow);
   padding: 1em .01em;
-  width: 40%;
+  width: 50%;
   margin: 1em auto 1em auto;
 }
 
